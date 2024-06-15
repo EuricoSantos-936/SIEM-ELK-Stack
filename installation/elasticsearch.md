@@ -23,6 +23,8 @@ sudo apt update
 sudo apt install elasticsearch
 ```
 
+4. If you need configure Elasticsearch edit the `elasticsearch.yml` file located in the `/etc/elasticsearch` directory.
+
 ### Step 2:  Start and enable Elasticsearch
 
 ```
