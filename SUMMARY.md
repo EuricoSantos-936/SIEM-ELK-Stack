@@ -15,3 +15,7 @@
 * [Data Sources](configuration/data-sources.md)
 * [Dashboards](configuration/dashboards.md)
 * [Alerts](configuration/alerts.md)
+
+***
+
+* [Monitoring](monitoring.md)
