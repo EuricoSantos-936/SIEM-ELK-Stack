@@ -31,3 +31,35 @@ sudo apt install elasticsearch
 sudo systemctl start elasticsearch
 sudo systemctl enable elasticsearch
 ```
+
+## Step 3: Verify if Elasticsearch is running
+
+```
+curl -X GET "localhost:9200/"
+```
+
+You should see a response with information about your Elasticsearch cluster
+
+### Step 4: Basic Configuration
+
+1. **Edit `elasticsearch.yml`**:
+   * Located in `/etc/elasticsearch/elasticsearch.yml`
+   *   Important settings:
+
+       ```yaml
+       cluster.name: my-cluster
+       node.name: node-1
+       network.host: 0.0.0.0
+       ```
+2. **Set memory limits**:
+   *   Edit `jvm.options` file to set appropriate memory limits:
+
+       ```plaintext
+       -Xms1g
+       -Xmx1g
+       ```
+3.  **Restart Elasticsearch** to apply changes:
+
+    ```bash
+    sudo systemctl restart elasticsearch
+    ```

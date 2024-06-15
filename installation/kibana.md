@@ -9,12 +9,27 @@ sudo apt update
 sudo apt install kibana
 ```
 
-2. If you need configure Kibana edit the `kibana.yml` file located in the `/etc/kibana` directory.
+### Step 2: Configure Kibana
 
-## Step 2: Start and enable Kibana:
+1. **Edit `kibana.yml`**:
+   * Located in `/etc/kibana/kibana.yml`
+   *   Important settings:
 
-```
-sudo systemctl start kibana
-sudo systemctl enable kibana
-```
+       ```yaml
+       server.port: 5601
+       server.host: "0.0.0.0"
+       elasticsearch.hosts: ["http://localhost:9200"]
+       ```
 
+### Step 3: Start Kibana
+
+1. **Start the service**:
+   *   **Linux**:
+
+       ```bash
+       sudo systemctl start kibana
+       sudo systemctl enable kibana
+       ```
+2. **Access Kibana**:
+   * Open your web browser and go to `http://localhost:5601`.
+   * You should see the Kibana interface.
