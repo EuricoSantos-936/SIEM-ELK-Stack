@@ -10,6 +10,6 @@
 * [Kibana](installation/kibana.md)
 * [Filebeat](installation/filebeat.md)
 
-## Data Ingestion
+## Configuration
 
-* [Collecting Data with Logstash](data-ingestion/collecting-data-with-logstash.md)
+* [Data Sources](configuration/data-sources.md)
