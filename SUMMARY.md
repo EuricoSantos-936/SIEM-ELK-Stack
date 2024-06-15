@@ -4,4 +4,5 @@
 
 ## Installation
 
+* [Prerequisites](installation/prerequisites.md)
 * [Elasticsearch](installation/elasticsearch.md)
