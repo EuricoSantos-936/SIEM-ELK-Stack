@@ -20,5 +20,14 @@
        output.logstash:
          hosts: ["localhost:5044"]
        ```
-3. **Verify data is being ingested**:
+3. **Restart all services**
+
+```
+sudo systemctl restart elasticsearch
+sudo systemctl restart logstash
+sudo systemctl restart kibana
+sudo systemctl restart filebeat
+```
+
+1. **Verify data is being ingested**:
    * Check Kibana to see if the logs are being indexed and visualized correctly.
