@@ -7,3 +7,4 @@ Setting up a SIEM system using the ELK Stack provides a powerful and flexible so
 * Continue to learn and explore advanced features of the ELK Stack.
 * Integrate additional security tools and data sources.
 * Regularly review and update your SIEM configuration to adapt to new threats and requirements.
+* Set alerts to prevent the incidents and mitigate threats.

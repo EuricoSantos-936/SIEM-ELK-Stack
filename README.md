@@ -23,6 +23,5 @@ The objective of this project is to implement a Security Information and Event M
 * Configuration
   * Data Sources
   * Dashboards
-  * Alerts
 * Monitoring
 * Conclusion
