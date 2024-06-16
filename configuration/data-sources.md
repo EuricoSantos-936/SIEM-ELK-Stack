@@ -29,5 +29,10 @@ sudo systemctl restart kibana
 sudo systemctl restart filebeat
 ```
 
-1. **Verify data is being ingested**:
-   * Check Kibana to see if the logs are being indexed and visualized correctly.
+4. **Verify data is being ingested**:
+
+* Check Kibana to see if the logs are being indexed and visualized correctly.
+* Go to the Menu -> Discover to visualize data.
+
+
+

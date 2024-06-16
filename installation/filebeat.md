@@ -22,8 +22,8 @@
          paths:
            - /var/log/*.log
 
-       output.elasticsearch:
-         hosts: ["localhost:9200"]
+       output.logstash:
+         hosts: ["localhost:5044"]
        ```
 2. **Load Kibana Dashboards**:
    *   Run the following command to load the predefined Kibana dashboards:
