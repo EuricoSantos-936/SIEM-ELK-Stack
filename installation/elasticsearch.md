@@ -28,14 +28,14 @@ sudo apt install elasticsearch
 ### Step 2:  Start and enable Elasticsearch
 
 ```
-sudo systemctl start elasticsearch
 sudo systemctl enable elasticsearch
+sudo systemctl start elasticsearch
 ```
 
 ## Step 3: Verify if Elasticsearch is running
 
 ```
-curl -X GET "localhost:9200/"
+curl -XGET "localhost:9200/"
 ```
 
 You should see a response with information about your Elasticsearch cluster
