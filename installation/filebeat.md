@@ -25,12 +25,6 @@
        output.logstash:
          hosts: ["localhost:5044"]
        ```
-2. **Load Kibana Dashboards**:
-   *   Run the following command to load the predefined Kibana dashboards:
-
-       ```bash
-       filebeat setup --dashboards
-       ```
 
 ### Step 3: Start Filebeat
 

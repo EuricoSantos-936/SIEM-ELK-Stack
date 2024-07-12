@@ -33,3 +33,5 @@ sudo apt install kibana
 2. **Access Kibana**:
    * Open your web browser and go to `http://localhost:5601`.
    * You should see the Kibana interface.
+
+<figure><img src="../.gitbook/assets/KibanaHome.png" alt=""><figcaption></figcaption></figure>

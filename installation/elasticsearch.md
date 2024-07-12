@@ -52,11 +52,11 @@ You should see a response with information about your Elasticsearch cluster
        network.host: 0.0.0.0
        ```
 2. **Set memory limits**:
-   *   Edit `jvm.options` file to set appropriate memory limits:
+   *   Edit `jvm.options` file to set appropriate memory limits (default memory is 1GB):
 
        ```plaintext
-       -Xms1g
-       -Xmx1g
+       -Xms2g
+       -Xmx2g
        ```
 3.  **Restart Elasticsearch** to apply changes:
 

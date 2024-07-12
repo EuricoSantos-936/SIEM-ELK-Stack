@@ -10,12 +10,7 @@
 1. **Use the Discover tab** in Kibana to drill down into logs.
    * Perform searches and apply filters to investigate specific events.
 
-### Step 3: Respond to Alerts
-
-1. **Monitor alerts** configured in Watcher.
-   * Investigate and respond to alerts promptly.
-
-### Step 4: Optimize and Tune the System
+### Step 3: Optimize and Tune the System
 
 1. **Regularly review configurations** and optimize as needed.
    * Adjust index patterns, visualizations, and alerts based on new insights and requirements.

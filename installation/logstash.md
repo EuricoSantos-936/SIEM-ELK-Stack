@@ -11,26 +11,41 @@ sudo apt install logstash
 
 ### Step 2: Configure Logstash
 
-1. **Create a configuration file**:
-   *   Create `logstash.conf` with the following content:
+1.  **Create a configuration file**:
 
-       ```plaintext
-       input {
-         beats {
-           port => 5044
-         }
-       }
-       filter {
-         # Add your filters here
-       }
-       output {
-         elasticsearch {
-           hosts => ["localhost:9200"]
-           index => "logstash-%{+YYYY.MM.dd}"
-         }
-       }
-       ```
+    * Create `logstash.conf` with the following content:
+
+    ```plaintext
+
+    input {
+      beats {
+        port = 5044
+      }
+    }
+
+    output {
+      if [@metadata][pipeline] {
+     elasticsearch {
+       hosts = ["localhost:9200"]
+       manage_template = false
+       index = "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+       pipeline = "%{[@metadata][pipeline]}"
+     }
+      } else {
+     elasticsearch {
+       hosts = ["localhost:9200"]
+       manage_template = false
+       index = "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+     }
+      }
+    }
+    ```
 2. **Save the configuration file** in the appropriate directory:`/etc/logstash/conf.d/logstash.conf`
+3. Testing configuration of Logstash
+
+```
+sudo -u logstash /usr/share/logstash/bin/logstash --path.settings /etc/logstash -t
+```
 
 ### Step 3: Start Logstash
 

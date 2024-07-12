@@ -10,12 +10,8 @@
 * [Kibana](installation/kibana.md)
 * [Filebeat](installation/filebeat.md)
 
-## Configuration
-
-* [Data Sources](configuration/data-sources.md)
-* [Dashboards](configuration/dashboards.md)
-
 ***
 
+* [Add Configuration (Syslog)](add-configuration-syslog.md)
 * [Monitoring](monitoring.md)
 * [Conclusion](conclusion.md)
